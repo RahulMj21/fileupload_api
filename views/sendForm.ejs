@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEND form</title>
+  </head>
+  <body>
+    <form action="/sendform" method="post" enctype="multipart/form-data">
+      <input
+        type="text"
+        name="firstname"
+        required
+        placeholder="Enter Your firstname"
+      />
+      <input
+        type="text"
+        name="lastname"
+        required
+        placeholder="Enter Your lastname"
+      />
+      <input type="file" name="image" required multiple />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
